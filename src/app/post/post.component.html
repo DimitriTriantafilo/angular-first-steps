@@ -3,4 +3,5 @@
 <img  src="{{post?.imagePath}}" class="img-fluid" alt="img">
 <p>Author: {{post?.author}}</p>
 <p>Date: {{ post?.datetimeCreated }}</p>
-<button>Edit</button> | <button (click)="onDelete()">Delete</button>
+<p>Likes {{post?.numberOfLikes}}</p>
+<button class="btn btn-success" (click)="onEdit()">Edit</button> | <button class="btn btn-danger" (click)="onDelete()">Delete</button>
