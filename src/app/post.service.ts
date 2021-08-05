@@ -44,4 +44,7 @@ export class PostService{
       getPost(index: number){
         return this.listOfPosts[index]
       }
+      likePost(index: number){
+        this.listOfPosts[index].numberOfLikes += 1;
+      }
 }

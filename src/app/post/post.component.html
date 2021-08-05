@@ -3,5 +3,13 @@
 <img  src="{{post?.imagePath}}" class="img-fluid" alt="img">
 <p>Author: {{post?.author}}</p>
 <p>Date: {{ post?.datetimeCreated }}</p>
-<p>Likes {{post?.numberOfLikes}}</p>
-<button class="btn btn-success" (click)="onEdit()">Edit</button> | <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+<p>Likes </p>
+<button type="button" class="btn btn-default btn-sm" (click)="likePost()">
+    <i class="fas fa-thumbs-up"></i> Like {{post?.numberOfLikes}}
+  </button>
+  <br/>
+<br/>
+<button class="btn btn-success" (click)="onEdit()">Edit</button> |
+ <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+ <br/>
+ <br/>
