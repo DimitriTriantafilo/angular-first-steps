@@ -15,10 +15,10 @@
       <div style="align-self: flex-end;">
         <ul class="nav navbar-nav navbar-right">
           <li class="nav-item" >
-            <a class="nav-link" routerLink="/auth"> <i class="fas fa-save"></i> Save</a>
+            <a class="nav-link" (click)="onSave()"> <i class="fas fa-save"></i> Save</a>
           </li>
           <li class="nav-item" >
-            <a class="nav-link" routerLink="/auth"> <i class="fa fa-download" aria-hidden="true"></i> Fetch</a>
+            <a class="nav-link" routerLink="/post-list" (click)="onFetch()"> <i class="fa fa-download" aria-hidden="true"></i> Fetch</a>
           </li>
           <li class="nav-item" >
             <a class="nav-link" routerLink="/auth"> <i class="fas fa-user"></i> Sign Up</a>

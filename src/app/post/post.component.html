@@ -1,15 +1,16 @@
-<h2>{{ post?.title }}</h2>
-<p>{{ post?.description }}</p>
+<div class="col-sm-6">
+<h2 >{{ post?.title }}</h2>
+<p style="text-align: justify;" >{{ post?.description }}</p>
 <img  src="{{post?.imagePath}}" class="img-fluid" alt="img">
 <p>Author: {{post?.author}}</p>
 <p>Date: {{ post?.datetimeCreated }}</p>
-<p>Likes </p>
-<button type="button" class="btn btn-default btn-sm" (click)="likePost()">
-    <i class="fas fa-thumbs-up"></i> Like {{post?.numberOfLikes}}
+<button type="button" style="margin-bottom: 1rem" class="btn btn-default btn-sm" (click)="likePost()">
+    <i class="fas fa-thumbs-up"></i> Likes {{post?.numberOfLikes}}
   </button>
   <br/>
-<br/>
-<button class="btn btn-success" (click)="onEdit()">Edit</button> |
- <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+  
+<button class="btn btn-success" (click)="onEdit()">Edit</button> 
+ <button class="btn btn-danger" style="margin-left: 0.7rem" (click)="onDelete()">Delete</button>
  <br/>
  <br/>
+</div>
